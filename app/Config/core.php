@@ -280,10 +280,9 @@ if (!env('APP_NAME')) {
 /**
  * Configure Cache from environment variables
  */
-var_dump(env('CACHE_URL'));
-var_dump(env('CACHE_DEBUG_KIT_URL'));
-var_dump(env('CACHE_CAKE_CORE_URL'));
-var_dump(env('CACHE_CAKE_MODEL_URL'));
+	var_dump(env('CACHE_URL'));
+	$dump = CacheDsn::parse(env('CACHE_URL'));
+	var_dump($dump);
 	Cache::config('default', CacheDsn::parse(env('CACHE_URL')));
 	Cache::config('debug_kit', CacheDsn::parse(env('CACHE_DEBUG_KIT_URL')));
 	Cache::config('_cake_core_', CacheDsn::parse(env('CACHE_CAKE_CORE_URL')));
