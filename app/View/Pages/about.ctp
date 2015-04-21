@@ -1,3 +1,18 @@
+<?php 
+$key = 'phtest2';
+$result = Cache::read($key);
+if (!$result) {
+	$result = array('a' => 'A result 2', 'b' => 0);
+	Cache::write($key, $result);
+} else {
+	$result['b'] ++;
+}
+if ($result['b'] > 0) {
+	Cache::delete($key);
+}
+var_dump($result);
+
+?>
 <h1>Hello Heroku Cedar-14</h1>
 <br/><span class="W">                                       </span>
  <br/><span class="W"> </span><span class="G">Allsvensk direktrapportering - svt.se </span>
