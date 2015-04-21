@@ -224,7 +224,7 @@ if (!env('APP_NAME')) {
  *
  */
 	Configure::write('Session', [
-		'defaults' => 'php'
+		'defaults' => 'cache'
 	]);
 
 /**
