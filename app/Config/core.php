@@ -292,7 +292,7 @@ if (!env('APP_NAME')) {
 		'port' => 10401,
 		'user' => 'redistogo',
 		'password' => '749a4702bcd9c07e151ac52a5c735c4e',
-		'duration' => '+1 week',
+		'duration' =>  '+1 week',
 		'path' => '/',
 		'prefix' => 'cedar14_'
 	));	
