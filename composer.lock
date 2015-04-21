@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "695b3278eec4087638f638ea0d2d5d2b",
+    "hash": "3a781f820b6abd33efb1440a835fbd7c",
     "packages": [
         {
             "name": "ad7six/dsn",
@@ -97,12 +97,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "f8c20b427de1cfe7a28a015c1640ce4e4eef1e33"
+                "reference": "316656d40baba4d46ff60f9fc64c52e5ce6b4849"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/f8c20b427de1cfe7a28a015c1640ce4e4eef1e33",
-                "reference": "f8c20b427de1cfe7a28a015c1640ce4e4eef1e33",
+                "url": "https://api.github.com/repos/composer/installers/zipball/316656d40baba4d46ff60f9fc64c52e5ce6b4849",
+                "reference": "316656d40baba4d46ff60f9fc64c52e5ce6b4849",
                 "shasum": ""
             },
             "replace": {
@@ -113,7 +113,7 @@
                 "composer/composer": "1.0.*@dev",
                 "phpunit/phpunit": "4.1.*"
             },
-            "type": "composer-installer",
+            "type": "composer-plugin",
             "extra": {
                 "class": "Composer\\Installers\\Installer",
                 "branch-alias": {
@@ -184,7 +184,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-03-26 16:11:30"
+            "time": "2015-04-21 16:59:00"
         },
         {
             "name": "friendsofcake/crud",
@@ -357,7 +357,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.4"
+        "php": ">=5.4",
+        "ext-redis": "*"
     },
     "platform-dev": []
 }
