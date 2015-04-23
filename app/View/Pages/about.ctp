@@ -11,6 +11,7 @@ if ($result['b'] > 0) {
 	Cache::delete($key);
 }
 var_dump($result);
+phpinfo();
 ?>
 <h1>Hello Heroku Cedar-14</h1>
 <br/><span class="W">                                       </span>
