@@ -28,5 +28,20 @@ App::uses('Shell', 'Console');
  * @package       app.Console.Command
  */
 class AppShell extends Shell {
-
+	public function worker() {
+		// initiate counter to use for cronjob replacement
+		$interval = 15;
+		// Force initial run when worker is started by settint counter to interval
+		$counter = $interval; 
+		while (true) {
+			// One second between checks
+			sleep(1);
+			// Check if "cronjobs" should be run
+			$counter++;
+			if ($counter > $interval) {
+				echo "A work is done\n";
+				$counter = 1;
+			}
+		}
+	}
 }
